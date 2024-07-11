@@ -229,4 +229,16 @@ return [
 
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Values to reach the GitLab & GitHub API
+    |--------------------------------------------------------------------------
+    |
+    | This array contains the values needed to reach the GitLab and GitHub
+    |
+    */
+    'gitlab_api_url' => env('GITLAB_API_URL', 'https://gitlab.com/api/v4/projects'),
+    'github_api_url' => env('GITHUB_API_URL', 'https://api.github.com/search/repositories'),
+    'results_per_page' => env('RESULTS_PER_PAGE', 5),
+
 ];
