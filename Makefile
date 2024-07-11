@@ -22,7 +22,7 @@ purge:
 	${DOCKER_COMPOSE} rm -f -v
 
 exec:
-	${DOCKER_COMPOSE} exec backend /bin/bash
+	${DOCKER_COMPOSE} exec -it koesio-technical-tests-backend /bin/bash
 
 test:
 	${DOCKER_COMPOSE} run --rm -v $${PWD}:/var/www backend ./vendor/bin/phpunit --testdox --filter=$(filter)

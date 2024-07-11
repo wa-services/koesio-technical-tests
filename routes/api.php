@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('repository', RepositoryController::class . '@search');
+Route::get('/repository', [RepositoryController::class, 'search']);
